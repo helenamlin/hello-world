@@ -20,7 +20,7 @@ cur.execute("""CREATE TABLE IF NOT EXISTS orders(
 conn.commit()
 
 # Adding Data
-# Used "INSERT or IGNORE INTO" to ignore the "IntegrityError: UNIQUE constraint failed:" message in the console that blocked the
+# Used "INSERT or IGNORE INTO" to ignore the "IntegrityError: UNIQUE constraint failed:" message in the console that blocked the outputs 
 
 cur.execute("""INSERT or IGNORE INTO users(userid, fname, lname, gender) 
     VALUES('00001', 'Nik', 'Piepenbreier', 'male');""")
